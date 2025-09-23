@@ -2,7 +2,7 @@ import React from "react";
 
 function Contactus() {
   React.useEffect(() => {
-    document.title = "App";
+    document.title = "App"
   }, []);
   return (
     <div>
