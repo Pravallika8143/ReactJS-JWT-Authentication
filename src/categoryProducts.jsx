@@ -5,7 +5,7 @@ function CategoryProducts() {
   var { cslug } = useParams();
   var [products, setProducts] = useState([]);
   React.useEffect(() => {
-    document.title = `${cslug} Category Products`;
+    document.title = `${cslug} Category Products`
   });
   useEffect(() => {
     fetch(`https://dummyjson.com/products/category/${cslug}`)
