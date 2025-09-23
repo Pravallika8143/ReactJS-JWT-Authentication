@@ -2,7 +2,7 @@ import React from "react";
 
 function Aboutus() {
   React.useEffect(() => {
-    document.title = "Aboutus";
+    document.title = "Aboutus"
   }, []);
   return (
     <div>
