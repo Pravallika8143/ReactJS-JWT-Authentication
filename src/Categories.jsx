@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Categories() {
   let [categories, setCategories] = useState([]);
   useEffect(() => {
-    document.title = "Categories";
+    document.title = "Categories"
   }, []);
   useEffect(() => {
     fetch('https://dummyjson.com/products/categories')
