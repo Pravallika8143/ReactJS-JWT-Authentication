@@ -11,6 +11,10 @@ function App() {
             navigate("/login")
         }
     })
+    function logout(){
+      window.localStorage.clear()
+      navigate("/login")
+    }
   return (
     <div className="border border-dark border-3 m-3">
       <div id="navbar">
@@ -23,6 +27,9 @@ function App() {
           </li>
           <li>
             <Link to="/courses" className="text-decoration-none text-dark fw-bold fs-4">Technologies</Link>
+          </li>
+          <li>
+            <button  onClick={()=> {logout()}} className="btn btn-danger btn-sm p-2">LogOut</button>
           </li>
         </ul>
       </div>
