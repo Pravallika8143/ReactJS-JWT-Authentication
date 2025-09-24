@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   var [user, setUser] = React.useState({
-    username: "pravallika",
-    password: "123",
+    username: "emilys",
+    password: "emilyspass",
   });
   var navigate = useNavigate();
 
