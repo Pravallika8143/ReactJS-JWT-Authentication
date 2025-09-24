@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   var [user, setUser] = React.useState({
-    username: "emilys",
-    password: "emilyspass",
+    username: "praveen",
+    password: "123",
   });
   var navigate = useNavigate();
 
@@ -15,10 +15,11 @@ function Login() {
       body: JSON.stringify({
         ...user,
       }),
-      credentials: "include", // Include cookies (e.g., accessToken) in the request
+      credentials: "include",
     })
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) =>
+        {
         if (data.msg === "FAILURE") {
           alert("Invalid credentials");
         } else {
@@ -27,7 +28,8 @@ function Login() {
           }
           navigate("/");
         }
-      });
+      }
+    );
   }
   return (
     <div>
