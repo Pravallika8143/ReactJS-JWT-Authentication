@@ -7,7 +7,7 @@ import Home from "./Home.jsx";
 import Aboutus from "./Aboutus.jsx";
 import CategoryProducts from "./categoryProducts.jsx";
 import Courses from "./courses.jsx";
-import Login from "./assets/user/Login.jsx";
+import Login from "./assets/features/user/Login.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
